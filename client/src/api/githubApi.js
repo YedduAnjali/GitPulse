@@ -7,7 +7,7 @@ const api = axios.create({
 
 export const fetchDashboardData = async (username) => {
   try {
-    const response = await api.get(`/github/dashboard/${username}`);
+    const response = await api.get(`/api/github/dashboard/${username}`);
     return response.data.data;
   } catch (error) {
     console.error("API ERROR:", error);
