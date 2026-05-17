@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-white;
+  font-family: Inter, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64748b;
+  border-radius: 10px;
+}
+
+.card {
+  @apply bg-white dark:bg-slate-900
+         border border-slate-200 dark:border-slate-800
+         rounded-3xl
+         shadow-lg;
+}
+
+.section-title {
+  @apply text-3xl font-bold tracking-tight;
+}
+
+.input {
+  @apply w-full rounded-2xl
+         border border-slate-300 dark:border-slate-700
+         bg-white dark:bg-slate-950
+         px-4 py-3
+         outline-none
+         focus:border-indigo-500
+         transition;
+}
+
+/* Contribution Heatmap */
+.react-calendar-heatmap .color-empty {
+  fill: #e2e8f0;
+}
+
+.dark .react-calendar-heatmap .color-empty {
+  fill: #0f172a;
+}
+
+.react-calendar-heatmap .color-scale-1 {
+  fill: #312e81;
+}
+
+.react-calendar-heatmap .color-scale-2 {
+  fill: #4338ca;
+}
+
+.react-calendar-heatmap .color-scale-3 {
+  fill: #6366f1;
+}
+
+.react-calendar-heatmap .color-scale-4 {
+  fill: #8b5cf6;
+}
+
+.react-calendar-heatmap text {
+  fill: #64748b;
+  font-size: 11px;
+}
+
+.dark .react-calendar-heatmap text {
+  fill: #94a3b8;
+}
